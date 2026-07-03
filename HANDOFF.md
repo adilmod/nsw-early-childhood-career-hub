@@ -28,7 +28,7 @@ A previous session (3 July) left a **partial** build in `app\` and notes in `res
 - Fable verification: all 6 pages HTTP 200, zero console errors/warnings, interview module tested live (Scenarios filter → 8 cards, reveal-answer works, counter 1/20).
 
 ## HUMAN ACTIONS NEEDED (for the user)
-1. **`[TO VERIFY]` placeholders in `site/courses.html`** — content file had no per-provider figures for: Mode (Macquarie MTeach, both WSU MTeach rows, RMIT Grad Dip) and Cost (every university row except RMIT). Check provider pages (linked in the table) and fill in, or ask Claude to research and patch.
+1. ~~`[TO VERIFY]` placeholders in `site/courses.html`~~ — DONE 4 July 2026: all fees/modes verified against provider pages and filled in (see "Verified fees & modes" in content/research-content.md). Notable: Macquarie MTeach has no CSP for new students (~$45k full fee); most other Grad Dip/MTeach CSPs are ~$4,700/yr.
 2. **Scholarship deadlines** — 2026 NSW ECEC Scholarship Program intakes have enrolment-window cutoffs; check current dates before enrolling: https://education.nsw.gov.au/early-childhood-education/initiatives/early-childhood-careers/available-supports
 3. **Personal decisions**: Grad Dip ECE vs Master of Teaching (Birth–5); confirm the Pakistani Master's meets provider entry + English-language requirements (overseas degrees often need IELTS-equivalent evidence).
 4. **First real-world step**: apply for the Working With Children Check (link on index page).

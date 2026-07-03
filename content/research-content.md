@@ -44,6 +44,19 @@ Uses the existing Master's as the entry degree. Two sub-options:
   - ACU Master of Teaching (EC & Primary) online: https://www.acu.edu.au/course/master-of-teaching-early-childhood-and-primary-online
 - Note: check each program is ACECQA-approved AND (for NESA accreditation as ECT) recognised in NSW. ACECQA approved list: https://www.acecqa.gov.au/qualifications/nqf-approved
 
+#### Verified fees & modes (checked against provider pages, 4 July 2026)
+- Macquarie MTeach (Birth–5): ~2 yrs FT; on campus or 100% online via Open Universities Australia; **no CSP for new students** — full fee ~$45,350 total via OUA.
+- WSU MTeach (Early Childhood): 2 yrs FT (PT available); on campus Bankstown City; CSP indicative from ~$11,885/yr.
+- WSU MTeach (EC and Primary): 2.5 yrs FT; on campus + school placements; CSP from ~$11,885/yr; early exit possible after EC component.
+- SCU Grad Dip Education (EC): 1 yr FT / 2 yrs PT; online (or Gold Coast); CSP ~$4,736 first year, HECS-HELP deferrable; intakes Mar/Jul/Oct.
+- Flinders Online Grad Dip ECE (Birth–5): 1 yr FT; online + placements; CSP ~$4,734/yr, full fee ~$24,500 (2026).
+- Flinders Online MTeach (Birth–5): 2 yrs FT; online + placements; CSP ~$4,738/yr (~$9,476 total).
+- RMIT Grad Dip ECE (GD204): 1 yr FT; on campus and online (placements can be regional VIC/interstate); CSP ~$4,738/yr (2026 Education band, ~$592/course).
+- UniSQ Grad Dip ECEC: 1 yr FT; external; CSP ~$4,736 first year (8-unit load).
+- OUA/Victoria University Grad Dip ECE: 1 yr FT; 100% online + practicum; full fee ~$20,400 total (8 subjects); HECS-HELP/CSP subject to eligibility.
+- ACU MTeach (EC and Primary) online: 2 yrs FT (PT available); fully online units + block placements; CSP ~$4,736 first year.
+- Pattern: CSP places in Education sit around **$4,700/yr** (heavily subsidised band) — the graduate-entry ECT route can cost as little as ~$4.7k–$9.5k total; Macquarie is the outlier with full fees only.
+
 ### Pathway D — Overseas qualification assessment (worth checking, low probability)
 - ACECQA can assess overseas qualifications for equivalence to an Australian ECEC qualification. An English Literature degree without formal teacher-education content and supervised practicum is unlikely to be assessed as equivalent — but the assessment (or a pre-check of the criteria) settles it definitively and any partial recognition may earn credit/RPL in Pathway C.
 - Links:
