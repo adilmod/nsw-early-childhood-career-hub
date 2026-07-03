@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interview Prep — NSW Early Childhood Career Hub</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">NSW Early Childhood Career Hub</a>
+    <a class="nav-link" href="index.html">Home</a>
+    <a class="nav-link" href="pathways.html">Pathways</a>
+    <a class="nav-link" href="courses.html">Courses</a>
+    <a class="nav-link" href="jobs.html">Jobs &amp; Employment</a>
+    <a class="nav-link active" href="interview.html">Interview Prep</a>
+    <a class="nav-link" href="resources.html">Resources</a>
+  </div>
+</nav>
+
+<main>
+  <div class="page-header">
+    <h1>Interview Preparation</h1>
+    <p class="lead">Standards-based practice. Study the frameworks, then work through the flashcards.</p>
+  </div>
+
+  <div class="panel panel-teal">
+    <h2>Frameworks to study</h2>
+    <ul>
+      <li><strong>EYLF v2.0</strong> (Early Years Learning Framework) &mdash; 5 outcomes: Identity; Community; Wellbeing; Learning; Communication. <a href="https://www.acecqa.gov.au/nqf/national-law-regulations/approved-learning-frameworks">Approved learning frameworks</a>.</li>
+      <li><strong>NQS</strong> &mdash; 7 quality areas (program &amp; practice; health &amp; safety; physical environment; staffing; relationships with children; partnerships with families; governance). <a href="https://www.acecqa.gov.au/nqf/national-quality-standard">National Quality Standard</a>.</li>
+      <li><strong>APST</strong> (Australian Professional Standards for Teachers, used by NESA for ECT accreditation). <a href="https://www.nsw.gov.au/education-and-training/nesa/teacher-accreditation/how-accreditation-works/teaching-standards">Teaching standards</a>.</li>
+      <li><strong>ECA Code of Ethics</strong>. <a href="https://www.earlychildhoodaustralia.org.au/our-publications/eca-code-ethics/">ECA Code of Ethics</a>.</li>
+      <li><strong>Child protection / mandatory reporting NSW</strong>. <a href="https://reporter.childstory.nsw.gov.au/s/mrg">Mandatory Reporter Guide</a>.</li>
+    </ul>
+    <h3>External question banks</h3>
+    <ul>
+      <li><a href="https://aussiechildcarenetwork.com.au/articles/childcare-articles/childcare-interview-questions">Aussie Childcare Network interview questions</a></li>
+      <li><a href="https://aussiechildcarenetwork.com.au/articles/childcare-articles/interview-questions-for-a-cert-3-educator-job-in-early-childhood">ACN Cert III educator interview questions</a></li>
+      <li><a href="https://au.indeed.com/career-advice/interviewing/child-care-interview-questions">Indeed 30 childcare interview questions</a></li>
+      <li><a href="https://kindercareers.com.au/childcare-interviews">Kinder Careers interview guide</a></li>
+      <li><a href="https://edgeearlylearning.com.au/top-interview-questions-for-childcare/">Edge Early Learning top questions</a></li>
+    </ul>
+  </div>
+
+  <h2>Practice flashcards</h2>
+  <div class="filters" id="filters">
+    <button data-cat="All" class="active">All</button>
+    <button data-cat="Behavioural">Behavioural</button>
+    <button data-cat="EYLF &amp; Programming">EYLF &amp; Programming</button>
+    <button data-cat="Scenarios">Scenarios</button>
+    <button data-cat="NQS &amp; Compliance">NQS &amp; Compliance</button>
+  </div>
+
+  <div class="flashcard" id="flashcard">
+    <span class="cat-tag" id="cardCat"></span>
+    <p class="question" id="cardQuestion"></p>
+    <div id="answerWrap" style="display:none;">
+      <div class="answer" id="cardAnswer"></div>
+      <div class="star-tip" id="cardStar" style="display:none;"></div>
+    </div>
+  </div>
+
+  <div class="controls">
+    <button id="prevBtn">&larr; Prev</button>
+    <button class="btn-reveal" id="revealBtn">Reveal model answer</button>
+    <button id="nextBtn">Next &rarr;</button>
+    <button id="shuffleBtn">Shuffle</button>
+    <span class="counter" id="counter"></span>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>NSW Early Childhood Career Hub &mdash; compiled July 2026. Model answers are grounded in the EYLF, NQS, APST and ECA Code of Ethics.</p>
+</footer>
+
+<script>
+var QUESTIONS = [
+  // Behavioural / background (4)
+  {
+    cat: "Behavioural",
+    q: "Tell us about yourself and why early childhood after a career break.",
+    a: "I bring several years of teaching young children in Pakistan plus ten years raising my own children, and I am now committing to the early childhood profession here in NSW. I am motivated by supporting each child's sense of Identity and Belonging, which is the first outcome of the EYLF v2.0. I am enrolling in an ACECQA-approved qualification so my practice meets national standards, and I see this role as the start of a long-term career, not just a job. My lived experience of parenting deepens my empathy for families, which supports NQS Quality Area 6 (partnerships with families).",
+    framework: "EYLF v2.0 Outcome 1 (Identity); NQS QA6 (partnerships with families).",
+    star: true
+  },
+  {
+    cat: "Behavioural",
+    q: "What experience do you have with children?",
+    a: "I taught young children at school in Pakistan, so I have classroom experience with planning, routines and managing a group. Alongside that, ten years of raising my own children gave me daily practice in nurturing, observing development and responding to individual needs. These experiences map directly to EYLF Outcome 3 (Wellbeing) and Outcome 5 (Communication), which are central to early childhood practice. I know I still need the ACECQA-approved qualification, and I am pairing this experience with formal study to meet the professional standards.",
+    framework: "EYLF Outcome 3 (Wellbeing); Outcome 5 (Communication).",
+    star: true
+  },
+  {
+    cat: "Behavioural",
+    q: "What does high-quality early childhood education mean to you?",
+    a: "To me it means intentional, play-based learning that is safe, inclusive and grounded in each child's interests and culture. That is exactly what the National Quality Standard sets out across its seven quality areas, from program and practice to relationships with children. High quality also means strong partnerships with families (NQS QA6) and reflective practice that keeps improving. Underpinning all of it are the EYLF principles of secure relationships and respect for diversity.",
+    framework: "NQS 7 quality areas; NQS QA6 (partnerships with families); EYLF principles.",
+    star: false
+  },
+  {
+    cat: "Behavioural",
+    q: "Why our service?",
+    a: "I have looked at how your service works and it aligns with my values around inclusive, play-based practice and strong family partnerships. I want to grow within a team that takes the National Quality Standard seriously, particularly Quality Area 7 (governance and leadership) and Quality Area 6 (partnerships with families). Your local setting also suits my plan to combine placement and study while I complete my qualification. I am looking for a service where I can commit long-term and progress toward an Early Childhood Teacher role.",
+    framework: "NQS QA6 (partnerships with families); NQS QA7 (governance and leadership).",
+    star: false
+  },
+  // EYLF / programming (4)
+  {
+    cat: "EYLF & Programming",
+    q: "How would you use the EYLF to plan an activity for 3-year-olds?",
+    a: "I would start from an EYLF learning outcome and the children's observed interests, then design a play-based experience with a clear intention. For example, to support Outcome 4 (children are confident and involved learners) I might set up an open-ended construction area and plan intentional prompts and questions. I would consider the learning environment, document what I observe, and use the EYLF planning cycle of observe, plan, act and reflect. I would also link the experience to Outcome 5 (Communication) by extending children's language during the activity.",
+    framework: "EYLF Outcome 4 (Learning); Outcome 5 (Communication); EYLF planning cycle.",
+    star: false
+  },
+  {
+    cat: "EYLF & Programming",
+    q: "Give an example of intentional teaching.",
+    a: "Intentional teaching means being deliberate and purposeful rather than leaving learning to chance. For instance, if I notice children sorting blocks, I would intentionally introduce mathematical language like 'more', 'fewer' and 'pattern' and ask open questions to extend their thinking. This is an EYLF practice and it directly supports Outcome 4 (children are confident and involved learners). I would then document the interaction and plan a follow-up experience, closing the EYLF planning cycle.",
+    framework: "EYLF practice of intentional teaching; Outcome 4 (Learning).",
+    star: false
+  },
+  {
+    cat: "EYLF & Programming",
+    q: "How do you document children's learning (observations, learning stories)?",
+    a: "I document learning through observations, learning stories, photos and work samples, always linked back to EYLF outcomes. A learning story captures what the child did, what it shows about their learning, and what I will plan next, which is the EYLF observe-plan-act-reflect cycle. Documentation feeds into NQS Quality Area 1 (educational program and practice) and is shared respectfully with families under NQS Quality Area 6. I keep records accurate and confidential in line with the ECA Code of Ethics.",
+    framework: "EYLF planning cycle; NQS QA1 (program and practice); NQS QA6; ECA Code of Ethics.",
+    star: false
+  },
+  {
+    cat: "EYLF & Programming",
+    q: "How do you support literacy in preschoolers?",
+    a: "I support early literacy through rich language, shared reading, songs, rhymes and print in the environment, which builds EYLF Outcome 5 (children are effective communicators). My Master in English Literature strengthens how I model language, tell stories and extend vocabulary intentionally. I would embed literacy in play rather than drilling it, and follow each child's interests and home languages to keep it inclusive. This also connects to Outcome 1 (Identity) when children see their own culture and language valued.",
+    framework: "EYLF Outcome 5 (Communication); Outcome 1 (Identity).",
+    star: false
+  },
+  // Scenarios (8)
+  {
+    cat: "Scenarios",
+    q: "A child bites another child — what do you do?",
+    a: "First I attend to the child who was hurt and provide first aid, keeping both children safe, which is NQS Quality Area 2 (children's health and safety). I stay calm and use positive guidance with the child who bit, helping them name feelings rather than shaming them. I document the incident, complete the required incident record, and inform both families sensitively under NQS Quality Area 6 (partnerships with families). I then reflect on triggers in the environment or routine to prevent it recurring.",
+    framework: "NQS QA2 (health and safety); NQS QA6 (partnerships with families).",
+    star: true
+  },
+  {
+    cat: "Scenarios",
+    q: "A child is inconsolable at drop-off.",
+    a: "I respond warmly and calmly, getting down to the child's level and offering comfort and a familiar routine or object to support their sense of security. Supporting emotional wellbeing here reflects EYLF Outcome 3 (children have a strong sense of wellbeing) and the EYLF principle of secure, respectful relationships. I reassure the parent and agree a consistent goodbye routine, which strengthens NQS Quality Area 6 (partnerships with families). I keep the family updated during the day so they feel confident.",
+    framework: "EYLF Outcome 3 (Wellbeing); NQS QA6; EYLF principle of secure relationships.",
+    star: true
+  },
+  {
+    cat: "Scenarios",
+    q: "You observe a colleague grab a child in anger — what do you do?",
+    a: "Child safety comes first: I would ensure the child is safe and remove them from harm immediately. This is a child protection matter, so I would report it to the director and follow mandatory reporting obligations and the service's child protection policy without delay. I would not confront or cover for the colleague; I would document the facts and, if needed, use the NSW Mandatory Reporter Guide and escalate to the relevant authority. This upholds NQS Quality Area 2 (health and safety) and the ECA Code of Ethics duty to keep children safe.",
+    framework: "Child protection / mandatory reporting (NSW MRG); NQS QA2; ECA Code of Ethics.",
+    star: true
+  },
+  {
+    cat: "Scenarios",
+    q: "A parent is angry their child got hurt.",
+    a: "I listen calmly and empathetically without becoming defensive, acknowledging the parent's concern for their child. I explain factually what happened, the first aid and steps taken, and show the incident documentation, which reflects NQS Quality Area 2 (health and safety). I reassure them about how we will prevent recurrence and involve the director if needed. Handling it respectfully strengthens NQS Quality Area 6 (partnerships with families) and reflects the ECA Code of Ethics commitment to honest, respectful relationships with families.",
+    framework: "NQS QA2 (health and safety); NQS QA6 (partnerships with families); ECA Code of Ethics.",
+    star: true
+  },
+  {
+    cat: "Scenarios",
+    q: "A child refuses to participate in group time.",
+    a: "I respect that participation can look different for each child and avoid forcing it, offering an alternative nearby so the child still feels included. This supports EYLF Outcome 1 (Identity) and the child's sense of agency and belonging. I would observe why they are reluctant, adjust the experience to their interests, and gently invite them back in. Over time I build the relationship and make group time engaging, which connects to EYLF Outcome 4 (children as confident and involved learners).",
+    framework: "EYLF Outcome 1 (Identity); Outcome 4 (Learning).",
+    star: true
+  },
+  {
+    cat: "Scenarios",
+    q: "Supporting a child with English as an additional language.",
+    a: "I would use visual cues, gestures, key words and consistent routines to help the child feel secure and understood. I value and include their home language and culture, which supports EYLF Outcome 1 (Identity) and Outcome 2 (children are connected with and contribute to their world). I partner with the family to learn important words and practices under NQS Quality Area 6, and I support communication development under EYLF Outcome 5. My own experience migrating and using English as an additional language gives me real empathy here.",
+    framework: "EYLF Outcome 1 (Identity); Outcome 2 (Community); Outcome 5 (Communication); NQS QA6.",
+    star: true
+  },
+  {
+    cat: "Scenarios",
+    q: "A child discloses something concerning at home.",
+    a: "As a mandatory reporter I stay calm, listen without leading or questioning the child, and reassure them they did the right thing telling me. I do not promise secrecy. I record exactly what the child said as soon as possible and report immediately to the director and follow mandatory reporting obligations, using the NSW Mandatory Reporter Guide to assess and make a report if required. This is a child protection responsibility that overrides all else and reflects NQS Quality Area 2 and the ECA Code of Ethics duty to protect children.",
+    framework: "Mandatory reporting (NSW MRG); NQS QA2 (health and safety); ECA Code of Ethics.",
+    star: true
+  },
+  {
+    cat: "Scenarios",
+    q: "Managing a room when short-staffed while keeping ratios.",
+    a: "My first priority is maintaining the legally required educator-to-child ratios, so I would immediately notify the room leader or director so relief staff can be arranged. In NSW the ratios are 1:4 for children under 2 years, 1:5 for 2 to 3 years, and 1:10 for 3 to 5 years. I would keep children safe and supervised, simplify the program if needed, and never leave the room understaffed. This upholds NQS Quality Area 4 (staffing arrangements) and Quality Area 2 (health and safety).",
+    framework: "NSW ratios (1:4 under 2; 1:5 for 2-3; 1:10 for 3-5); NQS QA4 (staffing); NQS QA2.",
+    star: true
+  },
+  // NQS / compliance (4)
+  {
+    cat: "NQS & Compliance",
+    q: "What are educator-to-child ratios?",
+    a: "In NSW the educator-to-child ratios are 1:4 for children under 2 years, 1:5 for children aged 2 to 3 years, and 1:10 for children aged 3 to 5 years. These ratios exist to ensure adequate supervision and safety and are part of the National Quality Framework. Maintaining them is core to NQS Quality Area 4 (staffing arrangements) and supports Quality Area 2 (children's health and safety). I always factor ratios into breaks, transitions and any staffing changes.",
+    framework: "NSW ratios: 1:4 under 2, 1:5 for 2-3, 1:10 for 3-5; NQS QA4 (staffing).",
+    star: false
+  },
+  {
+    cat: "NQS & Compliance",
+    q: "What would you do if you noticed a WHS hazard?",
+    a: "I would act immediately to make the area safe, for example removing or isolating the hazard and supervising children away from it. I would then report it through the service's process and record it so it can be rectified properly. Managing hazards protects children and staff under NQS Quality Area 2 (children's health and safety) and Quality Area 3 (physical environment). Being proactive about risk is part of maintaining a safe, compliant setting.",
+    framework: "NQS QA2 (health and safety); NQS QA3 (physical environment).",
+    star: false
+  },
+  {
+    cat: "NQS & Compliance",
+    q: "How do you maintain confidentiality?",
+    a: "I only share information about a child or family on a need-to-know basis and store records securely, never discussing families outside of professional contexts. This is a clear expectation of the ECA Code of Ethics and supports respectful partnerships under NQS Quality Area 6 (partnerships with families). The one limit is child protection: if there is a safeguarding concern, my mandatory reporting duty takes precedence over confidentiality. I make sure families understand how their information is handled.",
+    framework: "ECA Code of Ethics; NQS QA6 (partnerships with families); mandatory reporting exception.",
+    star: false
+  },
+  {
+    cat: "NQS & Compliance",
+    q: "What is your understanding of the NQF/NQS assessment and rating?",
+    a: "The National Quality Framework sets the national standards for education and care services, and the National Quality Standard has seven quality areas that services are assessed and rated against. The rating levels range from Working Towards up to Excellent, and the regulatory authority conducts the assessment and rating. Services use the Quality Improvement Plan and self-assessment to reflect and improve against the seven quality areas, which connects to NQS Quality Area 7 (governance and leadership). As an educator I contribute by embedding the standards in my daily practice.",
+    framework: "NQF / NQS 7 quality areas; assessment and rating; NQS QA7 (governance).",
+    star: false
+  }
+];
+
+var STAR_TIP = "STAR method tip: structure your answer as Situation, Task, Action, Result. Briefly set the scene, say what you needed to do, describe the specific actions you took, and finish with the outcome and what you learned.";
+
+var filtered = QUESTIONS.slice();
+var current = 0;
+
+var filterButtons = document.querySelectorAll("#filters button");
+var cardCat = document.getElementById("cardCat");
+var cardQuestion = document.getElementById("cardQuestion");
+var cardAnswer = document.getElementById("cardAnswer");
+var cardStar = document.getElementById("cardStar");
+var answerWrap = document.getElementById("answerWrap");
+var counter = document.getElementById("counter");
+var revealBtn = document.getElementById("revealBtn");
+
+function decode(str) {
+  var el = document.createElement("textarea");
+  el.innerHTML = str;
+  return el.value;
+}
+
+function render() {
+  if (filtered.length === 0) {
+    cardCat.textContent = "";
+    cardQuestion.textContent = "No questions in this category.";
+    answerWrap.style.display = "none";
+    counter.textContent = "0 / 0";
+    return;
+  }
+  if (current < 0) current = 0;
+  if (current >= filtered.length) current = filtered.length - 1;
+  var item = filtered[current];
+  cardCat.textContent = item.cat;
+  cardQuestion.textContent = item.q;
+  cardAnswer.innerHTML = "<p>" + item.a + "</p><p class=\"framework\">Framework: " + item.framework + "</p>";
+  if (item.star) {
+    cardStar.textContent = STAR_TIP;
+    cardStar.style.display = "block";
+  } else {
+    cardStar.style.display = "none";
+  }
+  answerWrap.style.display = "none";
+  revealBtn.textContent = "Reveal model answer";
+  counter.textContent = (current + 1) + " / " + filtered.length;
+}
+
+function applyFilter(cat) {
+  if (cat === "All") {
+    filtered = QUESTIONS.slice();
+  } else {
+    filtered = QUESTIONS.filter(function (item) { return item.cat === cat; });
+  }
+  current = 0;
+  render();
+}
+
+filterButtons.forEach(function (btn) {
+  btn.addEventListener("click", function () {
+    filterButtons.forEach(function (b) { b.classList.remove("active"); });
+    btn.classList.add("active");
+    applyFilter(decode(btn.getAttribute("data-cat")));
+  });
+});
+
+document.getElementById("prevBtn").addEventListener("click", function () {
+  if (filtered.length === 0) return;
+  current = (current - 1 + filtered.length) % filtered.length;
+  render();
+});
+document.getElementById("nextBtn").addEventListener("click", function () {
+  if (filtered.length === 0) return;
+  current = (current + 1) % filtered.length;
+  render();
+});
+document.getElementById("revealBtn").addEventListener("click", function () {
+  if (filtered.length === 0) return;
+  if (answerWrap.style.display === "none") {
+    answerWrap.style.display = "block";
+    revealBtn.textContent = "Hide model answer";
+  } else {
+    answerWrap.style.display = "none";
+    revealBtn.textContent = "Reveal model answer";
+  }
+});
+document.getElementById("shuffleBtn").addEventListener("click", function () {
+  for (var i = filtered.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var tmp = filtered[i];
+    filtered[i] = filtered[j];
+    filtered[j] = tmp;
+  }
+  current = 0;
+  render();
+});
+
+render();
+</script>
+</body>
+</html>
