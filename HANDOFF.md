@@ -9,6 +9,12 @@ A previous session (3 July) left a **partial** build in `app\` and notes in `res
 - **Canonical app: `site\`** (finished, link-audited, tested).
 - `app\` and `research\` are superseded. Suggest deleting them after a quick look — not deleted automatically because they weren't created this session.
 
+## Deployment (4 July 2026)
+- Live site: https://adilmod.github.io/nsw-early-childhood-career-hub/
+- Repo (public): https://github.com/adilmod/nsw-early-childhood-career-hub — `main` holds the whole project; `gh-pages` is a subtree of `site/` and is what Pages serves.
+- To publish site changes: commit to `main`, then `git subtree split --prefix site -b gh-pages --rebuild` … simpler: `git push origin ``$(git subtree split --prefix site main)``:gh-pages --force`.
+- Note: repo is public (required for Pages on a free plan) and the home page describes the candidate's personal situation — ask Claude to de-personalise or make the repo private (needs GitHub Pro for Pages) if that's a concern.
+
 ## What exists (canonical)
 - `site/` — 7-page static wiki app (works offline, no dependencies).
   - Open `site/index.html` in a browser, or use the preview server (`.claude/launch.json`, config `career-hub`: `python -m http.server 8641 --directory site`).
