@@ -4,10 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Resources — NSW Early Childhood Career Hub</title>
+<meta name="description" content="Every external link used in the NSW Early Childhood Career Hub, searchable and grouped.">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<nav class="site-nav">
+<a class="skip-link" href="#main">Skip to content</a>
+<nav class="site-nav" aria-label="Main">
   <div class="nav-inner">
     <a class="brand" href="index.html">NSW Early Childhood Career Hub</a>
     <a class="nav-link" href="index.html">Home</a>
@@ -15,14 +17,21 @@
     <a class="nav-link" href="courses.html">Courses</a>
     <a class="nav-link" href="jobs.html">Jobs &amp; Employment</a>
     <a class="nav-link" href="interview.html">Interview Prep</a>
-    <a class="nav-link active" href="resources.html">Resources</a>
+    <a class="nav-link" href="applications.html">Applications</a>
+    <a class="nav-link active" aria-current="page" href="resources.html">Resources</a>
   </div>
 </nav>
 
-<main>
+<main id="main">
   <div class="page-header">
     <h1>Resources</h1>
-    <p class="lead">Every external link from your research, grouped by section.</p>
+    <p class="lead">Every external link from the research, grouped by section.</p>
+  </div>
+
+  <div class="toolbar no-print">
+    <label for="resSearch" class="hidden">Search resources</label>
+    <input type="search" id="resSearch" placeholder="Search links, e.g. scholarship, SEEK, NESA" aria-label="Search resources">
+    <span class="kbd-hint" id="resCount" aria-live="polite"></span>
   </div>
 
   <h2 class="group-title">Pathway A &mdash; Certificate III</h2>
@@ -34,7 +43,7 @@
 
   <h2 class="group-title">Pathway B &mdash; Diploma</h2>
   <ul class="link-list">
-    <li><a href="https://www.tafensw.edu.au/course-areas/education-and-training/early-childhood-education-and-care">TAFE NSW ECEC course area</a><span class="desc">Diploma of Early Childhood Education and Care (CHC50121; <span class="verify">Verify</span> may now be CHC50125).</span></li>
+    <li><a href="https://www.tafensw.edu.au/course-areas/education-and-training/early-childhood-education-and-care">TAFE NSW ECEC course area</a><span class="desc">Diploma of Early Childhood Education and Care (CHC50125).</span></li>
   </ul>
 
   <h2 class="group-title">Pathway C &mdash; Graduate-entry ECT</h2>
@@ -49,6 +58,7 @@
     <li><a href="https://www.unisq.edu.au/study/degrees/graduate-diploma-of-early-childhood-education-and-care">UniSQ Grad Dip ECEC</a><span class="desc">External graduate diploma.</span></li>
     <li><a href="https://www.open.edu.au/degrees/graduate-diploma-in-early-childhood-education-victoria-university-vic-ece-gdi">Open Universities comparison</a><span class="desc">Compare graduate diploma options online.</span></li>
     <li><a href="https://www.acu.edu.au/course/master-of-teaching-early-childhood-and-primary-online">ACU Master of Teaching (EC &amp; Primary) online</a><span class="desc">Online Master of Teaching.</span></li>
+    <li><a href="https://www.westernsydney.edu.au/schools/soed/special_requirements">WSU School of Education &mdash; special requirements</a><span class="desc">LANTITE: not required for early-childhood-only courses; required for combined courses.</span></li>
     <li><a href="https://www.acecqa.gov.au/qualifications/nqf-approved">ACECQA approved list</a><span class="desc">Check a program is NQF-approved.</span></li>
   </ul>
 
@@ -75,8 +85,12 @@
 
   <h2 class="group-title">Pathway to a job &mdash; scholarships &amp; support</h2>
   <ul class="link-list">
-    <li><a href="https://www.service.nsw.gov.au/transaction/apply-working-children-check">Working With Children Check</a><span class="desc">Apply first (~$105/5yrs paid class).</span></li>
-    <li><a href="https://education.nsw.gov.au/early-childhood-education/initiatives/early-childhood-careers/available-supports/2026-early-childhood-education-and-care-scholarship-program1">NSW ECEC Scholarship Program 2026</a><span class="desc">~2,000 scholarships covering VET and birth&ndash;5 ECT degrees.</span></li>
+    <li><a href="https://www.service.nsw.gov.au/transaction/apply-working-children-check">Working With Children Check</a><span class="desc">Apply first. Free for volunteers and students on placement; ~$105 (5 yrs) for paid work.</span></li>
+    <li><a href="https://ocg.nsw.gov.au/working-children-check/who-needs-check">Office of the Children's Guardian &mdash; who needs a check</a><span class="desc">Volunteer vs paid checks, exemptions.</span></li>
+    <li><a href="https://www.scu.edu.au/current-students/enrolling/commonwealth-prac-payments">Commonwealth Prac Payment (SCU page)</a><span class="desc">$338.60/week (2026), means-tested, during mandatory teaching placements.</span></li>
+    <li><a href="https://www.education.gov.au/early-childhood/workforce/wages/how-apply-worker-retention-payment">Worker Retention Payment</a><span class="desc">Government-funded wage increase for ECEC workers, extended to June 2028.</span></li>
+    <li><a href="https://www.fairwork.gov.au/tools-and-resources/library/K600187_Award-coverage-wage-level-for-a-Certificate-III-in-Early-Childhood-Education-Care">Fair Work &mdash; award level for Cert III educators</a><span class="desc">Which Children's Services Award level applies.</span></li>
+    <li><a href="https://education.nsw.gov.au/early-childhood-education/initiatives/early-childhood-careers/available-supports/2026-early-childhood-education-and-care-scholarship-program1">NSW ECEC Scholarship Program 2026</a><span class="desc">~2,000 scholarships over two rounds; Round 2 expected late 2026.</span></li>
     <li><a href="https://education.nsw.gov.au/early-childhood-education/initiatives/early-childhood-careers/available-supports">All support programs (scholarships index)</a><span class="desc">Index of available NSW support programs.</span></li>
     <li><a href="https://education.nsw.gov.au/teach-nsw/get-paid-to-study/teacher-education-scholarship">Teach NSW get-paid-to-study</a><span class="desc">Teacher education scholarship.</span></li>
     <li><a href="https://education.nsw.gov.au/early-childhood-education/initiatives/early-childhood-careers">NSW early childhood careers hub</a><span class="desc">Official NSW careers information.</span></li>
@@ -119,6 +133,8 @@
     <li><a href="https://www.nsw.gov.au/education-and-training/nesa/teacher-accreditation/how-accreditation-works/teaching-standards">APST &mdash; Teaching standards</a><span class="desc">Used by NESA for ECT accreditation.</span></li>
     <li><a href="https://www.earlychildhoodaustralia.org.au/our-publications/eca-code-ethics/">ECA Code of Ethics</a><span class="desc">Professional ethics for the sector.</span></li>
     <li><a href="https://reporter.childstory.nsw.gov.au/s/mrg">Child protection / mandatory reporting NSW</a><span class="desc">NSW Mandatory Reporter Guide.</span></li>
+    <li><a href="https://education.nsw.gov.au/early-childhood-education/regulation-and-compliance/regulation-assessment-and-rating/child-safety/child-safety-reforms">NSW child safety reforms</a><span class="desc">National and NSW child safety reforms all services must implement.</span></li>
+    <li><a href="https://education.nsw.gov.au/early-childhood-education/regulation-and-compliance/regulation-assessment-and-rating/child-safety/restriction-on-personal-devices">Restriction on personal devices</a><span class="desc">Rules on phones and other image-capturing devices while working with children.</span></li>
   </ul>
 
   <h2 class="group-title">Interview question banks</h2>
@@ -132,7 +148,8 @@
 </main>
 
 <footer class="site-footer">
-  <p>NSW Early Childhood Career Hub &mdash; compiled July 2026. Fees and durations are indicative; always confirm with the provider and check ACECQA approval.</p>
+  <p>NSW Early Childhood Career Hub &mdash; compiled July 2026, reviewed 30 October 2026. Fees and durations are indicative; always confirm with the provider and check ACECQA approval.</p>
 </footer>
+<script src="app.js"></script>
 </body>
 </html>

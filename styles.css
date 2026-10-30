@@ -12,6 +12,35 @@
   --card: #ffffff;
   --border: #e0dcd6;
   --shadow: 0 2px 8px rgba(0,0,0,0.06);
+  --on-accent: #ffffff;
+  --stripe: #f7fbfb;
+  --btn-bg: #ffffff;
+  --verify-bg: #fff3cd;
+  --verify-ink: #7a5c00;
+  --verify-border: #d9ad2b;
+  --ok: #2f7d32;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --teal: #3aa39d;
+    --teal-dark: #7fd3cd;
+    --teal-soft: #17302f;
+    --coral: #e8785a;
+    --coral-dark: #f2a58f;
+    --coral-soft: #3a2420;
+    --ink: #e8e6e3;
+    --muted: #a9b4b3;
+    --bg: #121615;
+    --card: #1b2120;
+    --border: #2f3836;
+    --shadow: 0 2px 8px rgba(0,0,0,0.4);
+    --stripe: #1f2726;
+    --btn-bg: #1b2120;
+    --verify-bg: #3a3014;
+    --verify-ink: #f3d27a;
+    --verify-border: #a8842a;
+    --ok: #7ccf80;
+  }
 }
 
 * { box-sizing: border-box; }
@@ -65,12 +94,12 @@ a:hover { color: var(--coral-dark); }
   font-size: 0.95rem;
   border-bottom: 3px solid transparent;
 }
-.site-nav a.nav-link:hover { background: var(--teal-dark); color: #fff; }
+.site-nav a.nav-link:hover { background: rgba(0,0,0,0.18); color: #fff; }
 .site-nav a.nav-link.active {
   color: #fff;
   font-weight: 600;
   border-bottom: 3px solid var(--coral);
-  background: var(--teal-dark);
+  background: rgba(0,0,0,0.18);
 }
 
 /* Layout */
@@ -140,9 +169,9 @@ main {
 }
 .verify-note { font-size: 0.92rem; color: var(--muted); }
 .verify {
-  background: #fff3cd;
-  color: #7a5c00;
-  border: 1px dashed #d9ad2b;
+  background: var(--verify-bg);
+  color: var(--verify-ink);
+  border: 1px dashed var(--verify-border);
   padding: 1px 6px;
   border-radius: 4px;
   font-size: 0.85rem;
@@ -259,7 +288,7 @@ table.compare thead th {
   color: #fff;
   font-family: Georgia, serif;
 }
-table.compare tbody tr:nth-child(even) { background: #f7fbfb; }
+table.compare tbody tr:nth-child(even) { background: var(--stripe); }
 
 /* Link cards list */
 .link-list { list-style: none; padding: 0; }
@@ -281,7 +310,7 @@ table.compare tbody tr:nth-child(even) { background: #f7fbfb; }
 .filters { margin: 14px 0; display: flex; flex-wrap: wrap; gap: 8px; }
 .filters button, .controls button {
   border: 1px solid var(--teal);
-  background: #fff;
+  background: var(--btn-bg);
   color: var(--teal-dark);
   border-radius: 999px;
   padding: 7px 16px;
@@ -290,7 +319,7 @@ table.compare tbody tr:nth-child(even) { background: #f7fbfb; }
   font-weight: 600;
 }
 .filters button:hover, .controls button:hover { background: var(--teal-soft); }
-.filters button.active { background: var(--teal); color: #fff; }
+.filters button.active { background: var(--teal); color: var(--on-accent); }
 
 .flashcard {
   background: var(--card);
@@ -359,7 +388,62 @@ footer.site-footer {
 
 @media (max-width: 640px) {
   body { font-size: 16px; }
+  .site-nav { position: static; }
   .site-nav .nav-inner { padding: 0 8px; }
   .site-nav a.nav-link { padding: 10px 10px; }
   .timeline li { padding-left: 48px; }
+}
+
+/* Skip link */
+.skip-link { position: absolute; left: -9999px; top: 0; background: var(--card); color: var(--teal-dark); padding: 8px 12px; z-index: 200; }
+.skip-link:focus { left: 8px; top: 8px; }
+:focus-visible { outline: 3px solid var(--coral); outline-offset: 2px; }
+
+/* Roadmap checklist */
+.progress { margin: 0 0 18px; }
+.progress-bar { height: 10px; background: var(--teal-soft); border-radius: 999px; overflow: hidden; }
+.progress-bar span { display: block; height: 100%; width: 0; background: var(--teal); transition: width .2s; }
+.progress-label { font-size: 0.9rem; color: var(--muted); margin-top: 4px; }
+.step-check { display: flex; gap: 8px; align-items: flex-start; font-weight: 600; cursor: pointer; }
+.step-check input { width: 18px; height: 18px; margin-top: 4px; accent-color: var(--teal); flex: none; }
+.timeline li.done .step-num { background: var(--ok); }
+.timeline li.done .step-check span { text-decoration: line-through; color: var(--muted); }
+
+/* Forms / small controls */
+.toolbar { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; margin: 0 0 14px; }
+.toolbar label { font-size: 0.95rem; }
+input[type=search], input[type=text], input[type=date], select, textarea {
+  font: inherit; color: var(--ink); background: var(--card);
+  border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px;
+}
+input[type=search] { width: 100%; max-width: 420px; }
+textarea { width: 100%; min-height: 110px; }
+table.compare th button.sort {
+  all: unset; cursor: pointer; color: var(--on-accent); font-family: Georgia, serif; font-weight: bold;
+}
+table.compare th button.sort::after { content: " \2195"; opacity: .7; }
+table.compare th[aria-sort=ascending] button.sort::after { content: " \2191"; }
+table.compare th[aria-sort=descending] button.sort::after { content: " \2193"; }
+.deadline-list { list-style: none; padding: 0; }
+.deadline-list li { display: flex; justify-content: space-between; gap: 10px; align-items: center; background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 8px 12px; margin-bottom: 8px; }
+.deadline-list li.overdue { border-left: 4px solid var(--coral); }
+.deadline-list button, .rate button, .small-btn {
+  border: 1px solid var(--teal); background: var(--btn-bg); color: var(--teal-dark);
+  border-radius: 999px; padding: 4px 12px; cursor: pointer; font-size: 0.85rem; font-weight: 600;
+}
+.rate { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 12px; }
+.rate button[aria-pressed=true] { background: var(--teal); color: var(--on-accent); }
+.kbd-hint { font-size: 0.85rem; color: var(--muted); }
+.template { background: var(--card); border: 1px dashed var(--border); border-radius: 8px; padding: 14px 16px; white-space: pre-wrap; font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 0.9rem; }
+.hidden { display: none !important; }
+
+/* Print */
+@media print {
+  .site-nav, .site-footer, .controls, .filters, .toolbar, .skip-link, .rate, .no-print { display: none !important; }
+  body { background: #fff; color: #000; font-size: 12pt; }
+  main { max-width: none; padding: 0; }
+  .card, .panel, .timeline .step-body, .link-list li, details.acc { box-shadow: none; break-inside: avoid; }
+  details.acc > .acc-body { display: block; }
+  a { color: #000; }
+  a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 9pt; word-break: break-all; }
 }

@@ -4,138 +4,161 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Courses — NSW Early Childhood Career Hub</title>
+<meta name="description" content="Side-by-side comparison of NSW-relevant early childhood courses: mode, duration and indicative cost.">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<nav class="site-nav">
+<a class="skip-link" href="#main">Skip to content</a>
+<nav class="site-nav" aria-label="Main">
   <div class="nav-inner">
     <a class="brand" href="index.html">NSW Early Childhood Career Hub</a>
     <a class="nav-link" href="index.html">Home</a>
     <a class="nav-link" href="pathways.html">Pathways</a>
-    <a class="nav-link active" href="courses.html">Courses</a>
+    <a class="nav-link active" aria-current="page" href="courses.html">Courses</a>
     <a class="nav-link" href="jobs.html">Jobs &amp; Employment</a>
     <a class="nav-link" href="interview.html">Interview Prep</a>
+    <a class="nav-link" href="applications.html">Applications</a>
     <a class="nav-link" href="resources.html">Resources</a>
   </div>
 </nav>
 
-<main>
+<main id="main">
   <div class="page-header">
     <h1>Course &amp; Provider Comparison</h1>
     <p class="lead">Courses and providers drawn from Pathways A, B and C, side by side.</p>
   </div>
 
   <div class="note-banner">
-    Fees and durations are indicative (verified July 2026 for 2026 intakes) &mdash; always confirm with the provider and check ACECQA approval. <span class="verify">Verify</span> 2027 fees will be indexed and may differ. As an Australian citizen you can defer CSP contributions with HECS-HELP.
+    Fees and durations are indicative (verified July 2026 for 2026 intakes) &mdash; always confirm with the provider and check ACECQA approval. 2027 fees will be indexed and may differ (<span class="verify">Verify</span> with each provider). As an Australian citizen you can defer CSP contributions with HECS-HELP.
   </div>
 
+  <div class="toolbar no-print">
+    <label><input type="checkbox" id="fOnline"> Online-capable only</label>
+    <label><input type="checkbox" id="fEct"> ECT qualifications only</label>
+    <span class="kbd-hint" id="courseCount" aria-live="polite"></span>
+  </div>
+  <p class="kbd-hint">Click &ldquo;Duration&rdquo; or &ldquo;Est. total&rdquo; to sort. Est. total = annual fee &times; full-time years, 2026 figures, before HECS-HELP deferral.</p>
+
   <div class="table-wrap">
-  <table class="compare">
+  <table class="compare" id="courseTable" data-sortable>
     <thead>
       <tr>
-        <th>Provider / Course</th>
-        <th>Level</th>
-        <th>Mode</th>
-        <th>Indicative duration</th>
-        <th>Indicative cost</th>
-        <th>Link</th>
+        <th scope="col">Provider / Course</th>
+        <th scope="col">Level</th>
+        <th scope="col">Mode</th>
+        <th scope="col"><button class="sort" type="button">Duration</button></th>
+        <th scope="col">Indicative cost</th>
+        <th scope="col"><button class="sort" type="button">Est. total</button></th>
+        <th scope="col">Link</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
+      <tr data-online="1" data-ect="0">
         <td>TAFE NSW &mdash; Certificate III in Early Childhood Education and Care (CHC30125)</td>
         <td>Certificate III (VET)</td>
         <td>Online + face-to-face</td>
-        <td>~6&ndash;12 months FTE</td>
+        <td data-sort="0.75">~6&ndash;12 months FTE</td>
         <td>Fee-free for eligible NSW residents (citizens qualify)</td>
+        <td data-sort="0"><strong>$0</strong></td>
         <td><a href="https://www.tafensw.edu.au/course-areas/education-and-training/courses/certificate-iii-in-early-childhood-education-and-care--CHC30125-01">TAFE NSW Cert III</a></td>
       </tr>
-      <tr>
-        <td>TAFE NSW / Smart &amp; Skilled RTOs &mdash; Diploma of Early Childhood Education and Care (CHC50121) <span class="verify">Verify</span> may now be CHC50125</td>
+      <tr data-online="1" data-ect="0">
+        <td>TAFE NSW / Smart &amp; Skilled RTOs &mdash; Diploma of Early Childhood Education and Care (CHC50125)</td>
         <td>Diploma (VET)</td>
         <td>Online + placement</td>
-        <td>~12&ndash;24 months</td>
+        <td data-sort="1.5">~12&ndash;24 months</td>
         <td>Fee-free/subsidised under Smart &amp; Skilled for eligible NSW residents</td>
+        <td data-sort="0"><strong>$0 (if fee-free)</strong></td>
         <td><a href="https://www.tafensw.edu.au/course-areas/education-and-training/early-childhood-education-and-care">TAFE NSW ECEC</a></td>
       </tr>
-      <tr>
+      <tr data-online="1" data-ect="1">
         <td>Macquarie University &mdash; Master of Teaching (Birth to Five Years)</td>
         <td>Master of Teaching (ECT)</td>
         <td>On campus, or 100% online via Open Universities Australia (with placements)</td>
-        <td>~2 years FT (part-time available)</td>
+        <td data-sort="2">~2 years FT (part-time available)</td>
         <td>Full fee &mdash; ~$45,350 total via OUA; no CSP for new students at Macquarie</td>
+        <td data-sort="45350"><strong>~$45,350</strong></td>
         <td><a href="https://www.mq.edu.au/study/find-a-course/courses/master-of-teaching-birth-to-five-years">Macquarie MTeach</a></td>
       </tr>
-      <tr>
+      <tr data-online="0" data-ect="1">
         <td>Western Sydney University &mdash; Master of Teaching (Early Childhood)</td>
         <td>Master of Teaching (ECT)</td>
         <td>On campus (Bankstown City) + placements</td>
-        <td>2 years FT (part-time available)</td>
-        <td>CSP &mdash; indicative from ~$11,885/yr <span class="verify">Verify</span> about 2.5&times; other Education CSPs (~$4,700/yr); likely stale or not the Education band</td>
+        <td data-sort="2">2 years FT (part-time available)</td>
+        <td>CSP &mdash; indicative from ~$11,885/yr (WSU's published estimate; much higher than other providers' ~$4,700/yr &mdash; ask WSU how it is calculated)</td>
+        <td data-sort="23770"><strong>~$23,770</strong></td>
         <td><a href="https://www.westernsydney.edu.au/future/study/courses/postgraduate/master-of-teaching-early-childhood">WSU MTeach (EC)</a></td>
       </tr>
-      <tr>
+      <tr data-online="0" data-ect="1">
         <td>Western Sydney University &mdash; Master of Teaching (Early Childhood and Primary)</td>
-        <td>Master of Teaching (ECT)</td>
+        <td>Master of Teaching (ECT + primary)</td>
         <td>On campus (Bankstown City) theory + school-based placements</td>
-        <td>2.5 years FT (part-time available; early exit after the early-childhood component)</td>
-        <td>CSP &mdash; indicative from ~$11,885/yr <span class="verify">Verify</span> about 2.5&times; other Education CSPs (~$4,700/yr); likely stale or not the Education band</td>
+        <td data-sort="2.5">2.5 years FT (part-time available; early exit after the early-childhood component)</td>
+        <td>CSP &mdash; indicative from ~$11,885/yr; LANTITE required</td>
+        <td data-sort="29713"><strong>~$29,710</strong></td>
         <td><a href="https://www.westernsydney.edu.au/future/study/courses/postgraduate/master-of-teaching-early-childhood-and-primary">WSU MTeach (EC &amp; Primary)</a></td>
       </tr>
-      <tr>
+      <tr data-online="1" data-ect="1">
         <td>Southern Cross University &mdash; Graduate Diploma in Education (Early Childhood)</td>
         <td>Graduate Diploma (ECT)</td>
         <td>Online (or Gold Coast campus); intakes Mar/Jul/Oct</td>
-        <td>~1 year FT / 2 years PT</td>
+        <td data-sort="1">~1 year FT / 2 years PT</td>
         <td>CSP &mdash; ~$4,736 first year (HECS-HELP deferrable)</td>
+        <td data-sort="4736"><strong>~$4,740</strong></td>
         <td><a href="https://www.scu.edu.au/study/courses/graduate-diploma-in-education-early-childhood-1107425/">SCU Grad Dip</a></td>
       </tr>
-      <tr>
+      <tr data-online="1" data-ect="1">
         <td>Flinders Online &mdash; Graduate Diploma ECE (Birth&ndash;5)</td>
         <td>Graduate Diploma (ECT)</td>
-        <td>Fully online</td>
-        <td>~1 year FT</td>
+        <td>Fully online + placements</td>
+        <td data-sort="1">~1 year FT</td>
         <td>CSP ~$4,734/yr; full fee ~$24,500 (2026)</td>
+        <td data-sort="4734"><strong>~$4,730 (CSP)</strong></td>
         <td><a href="https://www.flinders.edu.au/online/courses/graduate-diploma-early-childhood-education-birth-5">Flinders Grad Dip ECE</a></td>
       </tr>
-      <tr>
+      <tr data-online="1" data-ect="1">
         <td>Flinders Online &mdash; Master of Teaching (Birth&ndash;5)</td>
         <td>Master of Teaching (ECT)</td>
-        <td>Fully online</td>
-        <td>~2 years FT (part-time available)</td>
+        <td>Fully online + placements</td>
+        <td data-sort="2">~2 years FT (part-time available)</td>
         <td>CSP ~$4,738/yr (~$9,476 total over 2 years, 2026)</td>
+        <td data-sort="9476"><strong>~$9,480</strong></td>
         <td><a href="https://www.flinders.edu.au/online/courses/master-teaching-birth-5">Flinders MTeach</a></td>
       </tr>
-      <tr>
+      <tr data-online="1" data-ect="1">
         <td>RMIT &mdash; Graduate Diploma in Early Childhood Education (GD204)</td>
         <td>Graduate Diploma (ECT)</td>
         <td>On campus and online (placements can be regional VIC or interstate)</td>
-        <td>~1 year FT</td>
+        <td data-sort="1">~1 year FT</td>
         <td>CSP ~$4,738/yr (2026 Education band)</td>
+        <td data-sort="4738"><strong>~$4,740</strong></td>
         <td><a href="https://www.rmit.edu.au/study-with-us/levels-of-study/postgraduate-study/graduate-diplomas/graduate-diploma-in-early-childhood-education-gd204">RMIT Grad Dip ECE</a></td>
       </tr>
-      <tr>
+      <tr data-online="1" data-ect="1">
         <td>UniSQ &mdash; Graduate Diploma of Early Childhood Education and Care</td>
         <td>Graduate Diploma (ECT)</td>
         <td>External</td>
-        <td>~1 year FT</td>
+        <td data-sort="1">~1 year FT</td>
         <td>CSP &mdash; ~$4,736 first year (8-unit load)</td>
+        <td data-sort="4736"><strong>~$4,740</strong></td>
         <td><a href="https://www.unisq.edu.au/study/degrees/graduate-diploma-of-early-childhood-education-and-care">UniSQ Grad Dip ECEC</a></td>
       </tr>
-      <tr>
+      <tr data-online="1" data-ect="1">
         <td>Open Universities (Victoria University) &mdash; Graduate Diploma in Early Childhood Education</td>
         <td>Graduate Diploma (ECT)</td>
-        <td>Online</td>
-        <td>~1 year FT</td>
+        <td>100% online + practicum</td>
+        <td data-sort="1">~1 year FT</td>
         <td>Full fee ~$20,400 total (8 subjects); HECS-HELP/CSP subject to eligibility</td>
+        <td data-sort="20400"><strong>~$20,400 (full fee)</strong></td>
         <td><a href="https://www.open.edu.au/degrees/graduate-diploma-in-early-childhood-education-victoria-university-vic-ece-gdi">Open Universities comparison</a></td>
       </tr>
-      <tr>
+      <tr data-online="1" data-ect="1">
         <td>ACU &mdash; Master of Teaching (Early Childhood and Primary) online</td>
-        <td>Master of Teaching (ECT)</td>
-        <td>Online</td>
-        <td>~2 years FT (part-time available)</td>
-        <td>CSP &mdash; ~$4,736 first year</td>
+        <td>Master of Teaching (ECT + primary)</td>
+        <td>Online units + block placements</td>
+        <td data-sort="2">~2 years FT (part-time available)</td>
+        <td>CSP &mdash; ~$4,736 first year; combined course, so LANTITE likely required</td>
+        <td data-sort="9472"><strong>~$9,470</strong></td>
         <td><a href="https://www.acu.edu.au/course/master-of-teaching-early-childhood-and-primary-online">ACU MTeach</a></td>
       </tr>
     </tbody>
@@ -146,7 +169,8 @@
 </main>
 
 <footer class="site-footer">
-  <p>NSW Early Childhood Career Hub &mdash; compiled July 2026. Fees and durations are indicative; always confirm with the provider and check ACECQA approval.</p>
+  <p>NSW Early Childhood Career Hub &mdash; compiled July 2026, reviewed 30 October 2026. Fees and durations are indicative; always confirm with the provider and check ACECQA approval.</p>
 </footer>
+<script src="app.js"></script>
 </body>
 </html>
