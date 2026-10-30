@@ -1,5 +1,5 @@
 # HANDOFF — NSW Early Childhood Career Hub
-Updated: 4 July 2026. Purpose: resume point after clearing context / stepping away.
+Updated: 30 October 2026. Purpose: resume point after clearing context / stepping away.
 
 ## State: COMPLETE and verified
 The app is built and working. No agent is running; nothing is blocked on Claude.
@@ -13,12 +13,15 @@ A previous session (3 July) left a **partial** build in `app\` and notes in `res
 - Live site: https://adilmod.github.io/nsw-early-childhood-career-hub/
 - Repo (public): https://github.com/adilmod/nsw-early-childhood-career-hub — `main` holds the whole project; `gh-pages` is a subtree of `site/` and is what Pages serves.
 - To publish site changes: commit to `main`, then `git subtree split --prefix site -b gh-pages --rebuild` … simpler: `git push origin ``$(git subtree split --prefix site main)``:gh-pages --force`.
-- Note: repo is public (required for Pages on a free plan) and the home page describes the candidate's personal situation — ask Claude to de-personalise or make the repo private (needs GitHub Pro for Pages) if that's a concern.
+- Note: repo is public (required for Pages on a free plan). 30 Oct 2026: site + content de-personalised (no age, gender, country or migration year). Older commits in git history still contain those details.
 
 ## What exists (canonical)
 - `site/` — 7-page static wiki app (works offline, no dependencies).
   - Open `site/index.html` in a browser, or use the preview server (`.claude/launch.json`, config `career-hub`: `python -m http.server 8641 --directory site`).
-  - Pages: index (personal roadmap), pathways, courses (comparison table), jobs (path-to-job ladder + job boards), interview (20 interactive flashcards grounded in EYLF v2.0 / NQS / APST), resources (all 54 links).
+  - Pages: index (roadmap checklist + key dates + personal deadline tracker), pathways, courses (sortable/filterable table with est. total cost), jobs (ladder, pay, job boards), interview (21 flashcards with self-rating, own-answer drafts, keyboard shortcuts), applications (resume + cover letter templates, career-break framing), resources (searchable).
+  - Shared behaviour in `site/app.js`; per-viewer progress/notes saved in browser localStorage only.
+  - Dark mode, print stylesheet, skip link, ARIA live regions.
+  - `.github/workflows/link-check.yml` runs lychee on site changes and weekly.
 - `content/research-content.md` — verified research source of truth. Edit this first, then update site pages to match.
 - `IMPLEMENTATION.md` — design decision, feature classification (Opus vs Fable), verification checklist.
 
@@ -30,11 +33,10 @@ A previous session (3 July) left a **partial** build in `app\` and notes in `res
 ## HUMAN ACTIONS NEEDED (for the user)
 1. ~~`[TO VERIFY]` placeholders in `site/courses.html`~~ — DONE 4 July 2026: all fees/modes verified against provider pages and filled in (see "Verified fees & modes" in content/research-content.md). Notable: Macquarie MTeach has no CSP for new students (~$45k full fee); most other Grad Dip/MTeach CSPs are ~$4,700/yr.
 2. **Scholarship deadlines** — 2026 NSW ECEC Scholarship Program intakes have enrolment-window cutoffs; check current dates before enrolling: https://education.nsw.gov.au/early-childhood-education/initiatives/early-childhood-careers/available-supports
-3. **Personal decisions**: Grad Dip ECE vs Master of Teaching (Birth–5); confirm the Pakistani Master's meets provider entry + English-language requirements (overseas degrees often need IELTS-equivalent evidence).
+3. **Personal decisions**: Grad Dip ECE vs Master of Teaching (Birth–5); confirm the overseas Master's meets provider entry + English-language requirements (published Grad Dip scores typically IELTS 6.5–7.0).
 4. **First real-world step**: apply for the Working With Children Check (link on index page).
 5. **Decide** whether to delete the superseded `app\` and `research\` folders.
 
 ## If resuming with Claude, likely next tasks
-- Fill the `[TO VERIFY]` fees/modes from provider websites (Fable researches, Opus patches HTML).
-- Add an application-deadline tracker or course-comparison picker.
-- Draft a resume/cover letter for Cert III casual educator roles (leverage overseas teaching + parenting decade).
+- Resolve the open [VERIFY] items in section 0 of `content/research-content.md` (ACECQA reg 126 needs acecqa.gov.au allowed in the session network).
+- Facts are still duplicated across HTML pages; consider generating pages from one data file.

@@ -1,0 +1,26 @@
+name: Link check
+
+on:
+  push:
+    paths: ["site/**"]
+  pull_request:
+    paths: ["site/**"]
+  schedule:
+    - cron: "17 21 * * 0" # weekly, Monday morning Sydney time
+  workflow_dispatch:
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check internal and external links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          # Some job boards block bots (403/429); report but do not fail on those.
+          args: >-
+            --no-progress
+            --max-retries 2
+            --accept 200..=299,403,429
+            site/*.html
+          fail: true

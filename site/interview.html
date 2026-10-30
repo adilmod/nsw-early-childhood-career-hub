@@ -4,22 +4,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Interview Prep — NSW Early Childhood Career Hub</title>
+<meta name="description" content="Early childhood interview practice flashcards grounded in the EYLF, NQS, APST and ECA Code of Ethics.">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<nav class="site-nav">
+<a class="skip-link" href="#main">Skip to content</a>
+<nav class="site-nav" aria-label="Main">
   <div class="nav-inner">
     <a class="brand" href="index.html">NSW Early Childhood Career Hub</a>
     <a class="nav-link" href="index.html">Home</a>
     <a class="nav-link" href="pathways.html">Pathways</a>
     <a class="nav-link" href="courses.html">Courses</a>
     <a class="nav-link" href="jobs.html">Jobs &amp; Employment</a>
-    <a class="nav-link active" href="interview.html">Interview Prep</a>
+    <a class="nav-link active" aria-current="page" href="interview.html">Interview Prep</a>
+    <a class="nav-link" href="applications.html">Applications</a>
     <a class="nav-link" href="resources.html">Resources</a>
   </div>
 </nav>
 
-<main>
+<main id="main">
   <div class="page-header">
     <h1>Interview Preparation</h1>
     <p class="lead">Standards-based practice. Study the frameworks, then work through the flashcards.</p>
@@ -33,7 +36,7 @@
       <li><strong>APST</strong> (Australian Professional Standards for Teachers, used by NESA for ECT accreditation). <a href="https://www.nsw.gov.au/education-and-training/nesa/teacher-accreditation/how-accreditation-works/teaching-standards">Teaching standards</a>.</li>
       <li><strong>ECA Code of Ethics</strong>. <a href="https://www.earlychildhoodaustralia.org.au/our-publications/eca-code-ethics/">ECA Code of Ethics</a>.</li>
       <li><strong>Child protection / mandatory reporting NSW</strong>. <a href="https://reporter.childstory.nsw.gov.au/s/mrg">Mandatory Reporter Guide</a>.</li>
-      <li><strong>Recent child-safety reforms</strong> &mdash; <span class="verify">Verify</span> the 2025 national and NSW child-safety changes for early childhood services (e.g. restrictions on personal devices, child-safe standards, child-safety training). Interviewers are likely to ask about these.</li>
+      <li><strong>Child safety reforms</strong> &mdash; all services must implement the national child safety reforms, and in NSW, restrictions on personal devices (phones, tablets, cameras, smartwatches) while working directly with children apply from 27 February 2026. <a href="https://education.nsw.gov.au/early-childhood-education/regulation-and-compliance/regulation-assessment-and-rating/child-safety/child-safety-reforms">Child safety reforms</a>; <a href="https://education.nsw.gov.au/early-childhood-education/regulation-and-compliance/regulation-assessment-and-rating/child-safety/restriction-on-personal-devices">Restriction on personal devices</a>. Interviewers are likely to ask about these.</li>
     </ul>
     <h3>External question banks</h3>
     <ul>
@@ -46,50 +49,60 @@
   </div>
 
   <h2>Practice flashcards</h2>
-  <div class="filters" id="filters">
-    <button data-cat="All" class="active">All</button>
-    <button data-cat="Behavioural">Behavioural</button>
-    <button data-cat="EYLF &amp; Programming">EYLF &amp; Programming</button>
-    <button data-cat="Scenarios">Scenarios</button>
-    <button data-cat="NQS &amp; Compliance">NQS &amp; Compliance</button>
+  <div class="filters" id="filters" role="group" aria-label="Question category">
+    <button type="button" data-cat="All" class="active" aria-pressed="true">All</button>
+    <button type="button" data-cat="Behavioural" aria-pressed="false">Behavioural</button>
+    <button type="button" data-cat="EYLF &amp; Programming" aria-pressed="false">EYLF &amp; Programming</button>
+    <button type="button" data-cat="Scenarios" aria-pressed="false">Scenarios</button>
+    <button type="button" data-cat="NQS &amp; Compliance" aria-pressed="false">NQS &amp; Compliance</button>
+    <button type="button" data-cat="Review" aria-pressed="false">Needs practice</button>
   </div>
 
-  <div class="flashcard" id="flashcard">
+  <div class="flashcard" id="flashcard" aria-live="polite">
     <span class="cat-tag" id="cardCat"></span>
     <p class="question" id="cardQuestion"></p>
+    <label for="myAnswer" class="kbd-hint">Draft your own answer first (saved in this browser):</label>
+    <textarea id="myAnswer" placeholder="Type your answer, then reveal the model answer to compare."></textarea>
     <div id="answerWrap" style="display:none;">
       <div class="answer" id="cardAnswer"></div>
       <div class="star-tip" id="cardStar" style="display:none;"></div>
     </div>
+    <div class="rate" role="group" aria-label="How did you go?">
+      <span class="kbd-hint">How did you go?</span>
+      <button type="button" data-rate="good" aria-pressed="false">Confident</button>
+      <button type="button" data-rate="review" aria-pressed="false">Needs practice</button>
+    </div>
   </div>
 
   <div class="controls">
-    <button id="prevBtn">&larr; Prev</button>
-    <button class="btn-reveal" id="revealBtn">Reveal model answer</button>
-    <button id="nextBtn">Next &rarr;</button>
-    <button id="shuffleBtn">Shuffle</button>
+    <button type="button" id="prevBtn">&larr; Prev</button>
+    <button type="button" class="btn-reveal" id="revealBtn" aria-expanded="false" aria-controls="answerWrap">Reveal model answer</button>
+    <button type="button" id="nextBtn">Next &rarr;</button>
+    <button type="button" id="shuffleBtn">Shuffle</button>
     <span class="counter" id="counter"></span>
   </div>
+  <p class="kbd-hint"><span id="rateSummary"></span> Keyboard: &larr; / &rarr; to move, Space to reveal.</p>
 </main>
 
 <footer class="site-footer">
-  <p>NSW Early Childhood Career Hub &mdash; compiled July 2026. Model answers are grounded in the EYLF, NQS, APST and ECA Code of Ethics.</p>
+  <p>NSW Early Childhood Career Hub &mdash; compiled July 2026, reviewed 30 October 2026. Model answers are grounded in the EYLF, NQS, APST and ECA Code of Ethics.</p>
 </footer>
 
+<script src="app.js"></script>
 <script>
 var QUESTIONS = [
   // Behavioural / background (4)
   {
     cat: "Behavioural",
     q: "Tell us about yourself and why early childhood after a career break.",
-    a: "I bring several years of teaching young children in Pakistan plus ten years raising my own children, and I am now committing to the early childhood profession here in NSW. I am motivated by supporting each child's sense of belonging and identity &mdash; EYLF v2.0 Outcome 1 is that children have a strong sense of identity. I am enrolling in an ACECQA-approved qualification so my practice meets national standards, and I see this role as the start of a long-term career, not just a job. My lived experience of parenting deepens my empathy for families, which supports NQS Quality Area 6 (partnerships with families).",
+    a: "I bring experience teaching young children at a school overseas plus a decade raising my own children, and I am now committing to the early childhood profession here in NSW. I am motivated by supporting each child's sense of belonging and identity &mdash; EYLF v2.0 Outcome 1 is that children have a strong sense of identity. I am enrolling in an ACECQA-approved qualification so my practice meets national standards, and I see this role as the start of a long-term career, not just a job. My lived experience of parenting deepens my empathy for families, which supports NQS Quality Area 6 (partnerships with families).",
     framework: "EYLF v2.0 Outcome 1 (Identity); NQS QA6 (partnerships with families).",
     star: true
   },
   {
     cat: "Behavioural",
     q: "What experience do you have with children?",
-    a: "I taught young children at school in Pakistan, so I have classroom experience with planning, routines and managing a group. Alongside that, ten years of raising my own children gave me daily practice in nurturing, observing development and responding to individual needs. These experiences map directly to EYLF Outcome 3 (Wellbeing) and Outcome 5 (Communication), which are central to early childhood practice. I know I still need the ACECQA-approved qualification, and I am pairing this experience with formal study to meet the professional standards.",
+    a: "I taught young children at a school overseas, so I have classroom experience with planning, routines and managing a group. Alongside that, a decade of raising my own children gave me daily practice in nurturing, observing development and responding to individual needs. These experiences map directly to EYLF Outcome 3 (Wellbeing) and Outcome 5 (Communication), which are central to early childhood practice. I know I still need the ACECQA-approved qualification, and I am pairing this experience with formal study to meet the professional standards.",
     framework: "EYLF Outcome 3 (Wellbeing); Outcome 5 (Communication).",
     star: true
   },
@@ -111,8 +124,8 @@ var QUESTIONS = [
   {
     cat: "EYLF & Programming",
     q: "How would you use the EYLF to plan an activity for 3-year-olds?",
-    a: "I would start from an EYLF learning outcome and the children's observed interests, then design a play-based experience with a clear intention. For example, to support Outcome 4 (children are confident and involved learners) I might set up an open-ended construction area and plan intentional prompts and questions. I would consider the learning environment, document what I observe, and use the EYLF v2.0 cycle of planning, assessment and evaluation (observe, analyse, plan, implement, reflect). I would also link the experience to Outcome 5 (Communication) by extending children's language during the activity.",
-    framework: "EYLF Outcome 4 (Learning); Outcome 5 (Communication); EYLF planning cycle. <span class=\"verify\">Verify</span> cycle wording against the EYLF v2.0 document.",
+    a: "I would start from an EYLF learning outcome and the children's observed interests, then design a play-based experience with a clear intention. For example, to support Outcome 4 (children are confident and involved learners) I might set up an open-ended construction area and plan intentional prompts and questions. I would consider the learning environment, document what I observe, and use the EYLF v2.0 assessment and planning cycle: observe and document, analyse, plan, implement, and critically reflect. I would also link the experience to Outcome 5 (Communication) by extending children's language during the activity.",
+    framework: "EYLF Outcome 4 (Learning); Outcome 5 (Communication); EYLF assessment and planning cycle.",
     star: false
   },
   {
@@ -132,7 +145,7 @@ var QUESTIONS = [
   {
     cat: "EYLF & Programming",
     q: "How do you support literacy in preschoolers?",
-    a: "I support early literacy through rich language, shared reading, songs, rhymes and print in the environment, which builds EYLF Outcome 5 (children are effective communicators). My Master in English Literature strengthens how I model language, tell stories and extend vocabulary intentionally. I would embed literacy in play rather than drilling it, and follow each child's interests and home languages to keep it inclusive. This also connects to Outcome 1 (Identity) when children see their own culture and language valued.",
+    a: "I support early literacy through rich language, shared reading, songs, rhymes and print in the environment, which builds EYLF Outcome 5 (children are effective communicators). My Master's in English Literature strengthens how I model language, tell stories and extend vocabulary intentionally. I would embed literacy in play rather than drilling it, and follow each child's interests and home languages to keep it inclusive. This also connects to Outcome 1 (Identity) when children see their own culture and language valued.",
     framework: "EYLF Outcome 5 (Communication); Outcome 1 (Identity).",
     star: false
   },
@@ -221,15 +234,26 @@ var QUESTIONS = [
     a: "The National Quality Framework sets the national standards for education and care services, and the National Quality Standard has seven quality areas that services are assessed and rated against. The rating levels are Significant Improvement Required, Working Towards, Meeting, Exceeding and Excellent, and the regulatory authority conducts the assessment and rating. Services use the Quality Improvement Plan and self-assessment to reflect and improve against the seven quality areas, which connects to NQS Quality Area 7 (governance and leadership). As an educator I contribute by embedding the standards in my daily practice.",
     framework: "NQF / NQS 7 quality areas; assessment and rating; NQS QA7 (governance).",
     star: false
+  },
+  {
+    cat: "NQS & Compliance",
+    q: "What do the recent child safety reforms mean for you day to day?",
+    a: "Child safety is everyone's responsibility. In NSW, since 27 February 2026, educators must not have personal devices that can take images &mdash; phones, tablets, cameras or smartwatches &mdash; while working directly with children unless the service authorises it, so I would store my phone where the service directs and only use service-issued devices for documentation. I would know and follow the service's child safe policies, complete any child safety training the service requires, and raise concerns immediately with the nominated supervisor. This upholds NQS Quality Area 2 (children's health and safety) and Quality Area 7 (governance and leadership), and the ECA Code of Ethics duty to protect children.",
+    framework: "NSW child safety reforms (personal device restrictions); NQS QA2; NQS QA7; ECA Code of Ethics.",
+    star: false
   }
 ];
 
 var STAR_TIP = "STAR method tip: structure your answer as Situation, Task, Action, Result. Briefly set the scene, say what you needed to do, describe the specific actions you took, and finish with the outcome and what you learned.";
 
+var store = window.HubStore || { get: function (k, f) { return f; }, set: function () {} };
+var ratings = store.get("hub.ratings", {});
+var notes = store.get("hub.notes", {});
+var activeCat = "All";
 var filtered = QUESTIONS.slice();
 var current = 0;
-
 var filterButtons = document.querySelectorAll("#filters button");
+var rateButtons = document.querySelectorAll(".rate button");
 var cardCat = document.getElementById("cardCat");
 var cardQuestion = document.getElementById("cardQuestion");
 var cardAnswer = document.getElementById("cardAnswer");
@@ -237,6 +261,8 @@ var cardStar = document.getElementById("cardStar");
 var answerWrap = document.getElementById("answerWrap");
 var counter = document.getElementById("counter");
 var revealBtn = document.getElementById("revealBtn");
+var myAnswer = document.getElementById("myAnswer");
+var rateSummary = document.getElementById("rateSummary");
 
 function decode(str) {
   var el = document.createElement("textarea");
@@ -244,11 +270,30 @@ function decode(str) {
   return el.value;
 }
 
+function setRevealed(show) {
+  answerWrap.style.display = show ? "block" : "none";
+  revealBtn.textContent = show ? "Hide model answer" : "Reveal model answer";
+  revealBtn.setAttribute("aria-expanded", show ? "true" : "false");
+}
+
+function updateSummary() {
+  var good = 0, review = 0;
+  QUESTIONS.forEach(function (item) {
+    if (ratings[item.q] === "good") good++;
+    if (ratings[item.q] === "review") review++;
+  });
+  rateSummary.textContent = "Rated " + (good + review) + " of " + QUESTIONS.length + ": " + good + " confident, " + review + " need practice.";
+}
+
 function render() {
+  updateSummary();
   if (filtered.length === 0) {
     cardCat.textContent = "";
-    cardQuestion.textContent = "No questions in this category.";
-    answerWrap.style.display = "none";
+    cardQuestion.textContent = activeCat === "Review" ? "Nothing marked “Needs practice” yet." : "No questions in this category.";
+    setRevealed(false);
+    myAnswer.disabled = true;
+    myAnswer.value = "";
+    rateButtons.forEach(function (b) { b.disabled = true; b.setAttribute("aria-pressed", "false"); });
     counter.textContent = "0 / 0";
     return;
   }
@@ -264,14 +309,22 @@ function render() {
   } else {
     cardStar.style.display = "none";
   }
-  answerWrap.style.display = "none";
-  revealBtn.textContent = "Reveal model answer";
+  myAnswer.disabled = false;
+  myAnswer.value = notes[item.q] || "";
+  rateButtons.forEach(function (b) {
+    b.disabled = false;
+    b.setAttribute("aria-pressed", ratings[item.q] === b.getAttribute("data-rate") ? "true" : "false");
+  });
+  setRevealed(false);
   counter.textContent = (current + 1) + " / " + filtered.length;
 }
 
 function applyFilter(cat) {
+  activeCat = cat;
   if (cat === "All") {
     filtered = QUESTIONS.slice();
+  } else if (cat === "Review") {
+    filtered = QUESTIONS.filter(function (item) { return ratings[item.q] === "review"; });
   } else {
     filtered = QUESTIONS.filter(function (item) { return item.cat === cat; });
   }
@@ -279,34 +332,59 @@ function applyFilter(cat) {
   render();
 }
 
+function move(step) {
+  if (filtered.length === 0) return;
+  current = (current + step + filtered.length) % filtered.length;
+  render();
+}
+
+function toggleReveal() {
+  if (filtered.length === 0) return;
+  setRevealed(answerWrap.style.display === "none");
+}
+
 filterButtons.forEach(function (btn) {
   btn.addEventListener("click", function () {
-    filterButtons.forEach(function (b) { b.classList.remove("active"); });
+    filterButtons.forEach(function (b) { b.classList.remove("active"); b.setAttribute("aria-pressed", "false"); });
     btn.classList.add("active");
+    btn.setAttribute("aria-pressed", "true");
     applyFilter(decode(btn.getAttribute("data-cat")));
   });
 });
 
-document.getElementById("prevBtn").addEventListener("click", function () {
-  if (filtered.length === 0) return;
-  current = (current - 1 + filtered.length) % filtered.length;
-  render();
+rateButtons.forEach(function (btn) {
+  btn.addEventListener("click", function () {
+    if (filtered.length === 0) return;
+    var item = filtered[current];
+    var value = btn.getAttribute("data-rate");
+    if (ratings[item.q] === value) delete ratings[item.q]; else ratings[item.q] = value;
+    store.set("hub.ratings", ratings);
+    rateButtons.forEach(function (b) {
+      b.setAttribute("aria-pressed", ratings[item.q] === b.getAttribute("data-rate") ? "true" : "false");
+    });
+    updateSummary();
+  });
 });
-document.getElementById("nextBtn").addEventListener("click", function () {
+
+myAnswer.addEventListener("input", function () {
   if (filtered.length === 0) return;
-  current = (current + 1) % filtered.length;
-  render();
+  var item = filtered[current];
+  if (myAnswer.value.trim()) notes[item.q] = myAnswer.value; else delete notes[item.q];
+  store.set("hub.notes", notes);
 });
-document.getElementById("revealBtn").addEventListener("click", function () {
-  if (filtered.length === 0) return;
-  if (answerWrap.style.display === "none") {
-    answerWrap.style.display = "block";
-    revealBtn.textContent = "Hide model answer";
-  } else {
-    answerWrap.style.display = "none";
-    revealBtn.textContent = "Reveal model answer";
-  }
+
+document.getElementById("prevBtn").addEventListener("click", function () { move(-1); });
+document.getElementById("nextBtn").addEventListener("click", function () { move(1); });
+revealBtn.addEventListener("click", toggleReveal);
+
+document.addEventListener("keydown", function (e) {
+  var tag = (e.target.tagName || "").toLowerCase();
+  if (tag === "textarea" || tag === "input" || tag === "button" || e.altKey || e.ctrlKey || e.metaKey) return;
+  if (e.key === "ArrowLeft") { move(-1); e.preventDefault(); }
+  else if (e.key === "ArrowRight") { move(1); e.preventDefault(); }
+  else if (e.key === " ") { toggleReveal(); e.preventDefault(); }
 });
+
 document.getElementById("shuffleBtn").addEventListener("click", function () {
   for (var i = filtered.length - 1; i > 0; i--) {
     var j = Math.floor(Math.random() * (i + 1));

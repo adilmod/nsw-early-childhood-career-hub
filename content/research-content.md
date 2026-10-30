@@ -2,28 +2,37 @@
 Compiled 4 July 2026. All fees/durations are indicative — confirm with the provider before enrolling.
 
 ## Candidate context
-31yo female in NSW, returning to work after ~10 years raising children. Taught young children at school in Pakistan; migrated 2018. Holds a Master in English Literature (Pakistan). **Australian citizen** → eligible for fee-free TAFE (Smart & Skilled), CSP places and HECS-HELP deferral. Goal: NSW early childhood teaching/education career.
+Australian citizen in NSW returning to work after a long career break (raising children). Has experience teaching young children at a school overseas and holds an overseas Master's in English Literature. Citizenship → eligible for fee-free TAFE (Smart & Skilled), CSP places and HECS-HELP deferral. Goal: NSW early childhood teaching career.
+(Personal details deliberately kept general — this repo and the site are public.)
 
 **Key implication:** The Master in English Literature is NOT a recognised teaching qualification for Australian early childhood work — but it is likely to be assessed as bachelor-equivalent [VERIFY: each university assesses overseas degrees], which unlocks the fast graduate-entry routes (Graduate Diploma / Master of Teaching) that career changers without a degree cannot take. Prior overseas teaching experience strengthens applications and interviews but does not substitute for an ACECQA-approved qualification.
 
 ---
 
-## 0. Open items to verify (added 30 Oct 2026)
-- [VERIFY] Diploma code: CHC50121 may be superseded by CHC50125 (2025 release alongside CHC30125).
-- [VERIFY] WSU CSP ~$11,885/yr — ~2.5× other Education CSPs (~$4,700/yr); likely stale or wrong band.
-- [VERIFY] Overseas Master's assessed as bachelor-equivalent by each chosen provider.
-- [VERIFY] English-language entry requirement for ITE (often IELTS 7.5 or equivalent); whether the Master's in English counts as evidence.
-- [VERIFY] Whether LANTITE is required for each Birth–5 program.
-- [VERIFY] Commonwealth Prac Payment (from 2025, means-tested) — eligibility + current rate.
-- [VERIFY] Reg 126: whether being enrolled in an ECT degree counts as Cert III-qualified for ratios (could make Cert III optional).
-- [VERIFY] Volunteer (free) WWCC for student placements vs paid check for employment.
-- [VERIFY] First aid incl. asthma/anaphylaxis (HLTAID012) required by employers.
-- [VERIFY] Current pay rates (award + Dec 2024/Dec 2025 government-funded wage increases) for Cert III, Diploma, ECT.
-- [VERIFY] 2025 child-safety reforms for ECEC (personal devices, child-safe standards, training).
-- [VERIFY] 2027 intakes, 2027 fees (indexed), and 2027 scholarship round (2026 round may be closed).
-- [VERIFY] EYLF v2.0 planning/assessment cycle wording used in interview answers.
+## 0. Verification log (30 Oct 2026)
+Checked via web search. acecqa.gov.au was unreachable from the research session, so ACECQA items stay open.
 
-Fixed 30 Oct 2026: Grad Dip CSP range ($17,400 upper bound removed), Flinders/ACU MTeach durations (2 yrs FT), SCU mode/PT/intakes, NQS rating levels (lowest is Significant Improvement Required), EYLF Outcome 1 wording.
+**Confirmed / corrected**
+- Diploma code is now **CHC50125** (replaced CHC50121; training.gov.au release history, provider pages). Site updated.
+- WSU MTeach (EC) ~$11,885/yr is WSU's own published indicative figure (course page). Kept, noted as much higher than other providers' ~$4,700/yr.
+- LANTITE: not required for early-childhood-only courses; required for combined EC + Primary / Birth–12 (WSU School of Education special requirements: https://www.westernsydney.edu.au/schools/soed/special_requirements).
+- English entry: published Grad Dip ECE scores are typically IELTS 6.5–7.0 (VU 7.0, SCU pathway 6.5, Excelsia 6.5). Earlier "IELTS 7.5" claim was unsupported — removed.
+- Commonwealth Prac Payment: $338.60/week from 1 Jan 2026 (was $331.65 in 2025); means-tested, taxable; apply via university (e.g. https://www.scu.edu.au/current-students/enrolling/commonwealth-prac-payments).
+- WWCC: free for volunteers and students on placement; a volunteer check cannot be used for paid work. Paid check ~$105 (OCG); one unofficial source says $112 from 1 Jul 2026 (https://ocg.nsw.gov.au/working-children-check/who-needs-check).
+- NSW ECEC Scholarship Program 2026: ~2,000 scholarships over two rounds, up to $27M; Round 2 expected late 2026; up to $5,000 Cert III, $6,000 Diploma, $35,000 ECT degree.
+- Child safety: national child safety reforms in force for all services; NSW personal-device restrictions (phones, tablets, cameras, smartwatches) apply from 27 Feb 2026 (https://education.nsw.gov.au/early-childhood-education/regulation-and-compliance/regulation-assessment-and-rating/child-safety/child-safety-reforms, https://education.nsw.gov.au/early-childhood-education/regulation-and-compliance/regulation-assessment-and-rating/child-safety/restriction-on-personal-devices). Added interview question 21.
+- Worker Retention Payment extended to 30 June 2028 (https://www.education.gov.au/early-childhood/workforce/wages/how-apply-worker-retention-payment). Children's Services Award restructured from 1 Mar 2026.
+- EYLF v2.0 cycle (ACECQA info sheet): observing, documenting, analysing, planning, implementing, critical reflection. Interview wording updated.
+
+**Still open — flagged on the site with "Verify"**
+- [VERIFY] Reg 126 "actively working towards": does enrolment in an ECT degree count toward the Cert III requirement (could make Cert III optional)? Needs ACECQA page.
+- [VERIFY] Each provider accepts the overseas Master's as bachelor-equivalent + its English requirement.
+- [VERIFY] Whether a Grad Dip / MTeach qualifies for the $35,000 ECT scholarship amount; Round 2 dates.
+- [VERIFY] Current hourly pay rates (Fair Work pay guides) — third-party sites conflict.
+- [VERIFY] 2027 application closing dates and indexed 2027 fees per provider.
+- First aid (HLTAID012) stated as "many employers ask for" — common practice, not a legal requirement for every educator.
+
+Earlier fixes (30 Oct 2026): Grad Dip CSP range ($17,400 upper bound removed), Flinders/ACU MTeach durations (2 yrs FT), SCU mode/PT/intakes, NQS rating levels (lowest is Significant Improvement Required), EYLF Outcome 1 wording.
 
 ## 1. Pathway types (four realistic routes)
 
@@ -37,7 +46,7 @@ Fixed 30 Oct 2026: Grad Dip CSP range ($17,400 upper bound removed), Flinders/AC
   - Skills NSW ECEC (fee-free info): https://skills.education.nsw.gov.au/early-childhood-education
   - TAFE NSW ECEC course area: https://www.tafensw.edu.au/course-areas/education-and-training/early-childhood-education-and-care
 
-### Pathway B — Diploma of Early Childhood Education and Care (CHC50121)
+### Pathway B — Diploma of Early Childhood Education and Care (CHC50125, replaced CHC50121)
 - "Lead educator" / room leader roles; designs programs (Cert III staff implement them). Higher pay than Cert III.
 - Fee-free/subsidised under Smart & Skilled for eligible NSW residents; ~12–24 months; online + placement.
 - Common route: do Cert III first, work, then Diploma part-time while employed (employers often fund it).
@@ -104,7 +113,7 @@ Cert III fee-free NOW (fast, free, gets casual work and placement experience wit
 ---
 
 ## 3. Pathway to a job (training → casual → full-time)
-1. **Working With Children Check** (~$105/5yrs paid class) — do first: https://www.service.nsw.gov.au/transaction/apply-working-children-check
+1. **Working With Children Check** (free volunteer check covers placements; ~$105/5yrs paid check for employment) — do first: https://www.service.nsw.gov.au/transaction/apply-working-children-check
 2. **Enrol fee-free Cert III** → mandatory placement (~160 hrs) doubles as a working interview; many students are hired casually by their placement centre.
 3. **NSW ECEC Scholarship Program 2026** — ~2,000 scholarships (up to $27M): study support payments + completion/employment payment; covers VET and birth–5 ECT degrees: https://education.nsw.gov.au/early-childhood-education/initiatives/early-childhood-careers/available-supports/2026-early-childhood-education-and-care-scholarship-program1
    - All support programs (incl. scholarships index): https://education.nsw.gov.au/early-childhood-education/initiatives/early-childhood-careers/available-supports
@@ -148,8 +157,8 @@ Question banks:
 - Kinder Careers interview guide: https://kindercareers.com.au/childcare-interviews
 - Edge Early Learning top questions: https://edgeearlylearning.com.au/top-interview-questions-for-childcare/
 
-### 20 practice questions for the interactive module
-Behavioural/background (4): tell us about yourself & why early childhood after a career break; what experience do you have with children (leverage: taught in Pakistan + 10 yrs parenting); what does high-quality early childhood education mean to you; why our service?
+### 21 practice questions (21st added 30 Oct 2026: child safety reforms) for the interactive module
+Behavioural/background (4): tell us about yourself & why early childhood after a career break; what experience do you have with children (leverage: taught overseas + a decade of parenting); what does high-quality early childhood education mean to you; why our service?
 EYLF/programming (4): how would you use the EYLF to plan an activity for 3-year-olds; give an example of intentional teaching; how do you document children's learning (observations, learning stories); how do you support literacy in preschoolers (leverage English Lit background).
 Scenarios (8): child bites another child — what do you do; a child is inconsolable at drop-off; you observe a colleague grab a child in anger (answer: child safety first, report to director/mandatory reporting); parent angry their child got hurt; child refuses to participate in group time; supporting a child with English as an additional language; a child discloses something concerning at home (mandatory reporter response); managing a room when short-staffed while keeping ratios.
 NQS/compliance (4): what are educator-to-child ratios (NSW: 1:4 under 2yrs, 1:5 for 2–3yrs, 1:10 for 3–5yrs); what would you do if you noticed a WHS hazard; how do you maintain confidentiality; what is your understanding of the NQF/NQS assessment & rating.
