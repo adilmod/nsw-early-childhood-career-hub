@@ -2,17 +2,34 @@
 Compiled 4 July 2026. All fees/durations are indicative — confirm with the provider before enrolling.
 
 ## Candidate context
-31yo female in NSW, returning to work after ~10 years raising children. Taught young children at school in Pakistan; migrated 2018. Holds a Master in English Literature (Pakistan). Goal: NSW early childhood teaching/education career.
+31yo female in NSW, returning to work after ~10 years raising children. Taught young children at school in Pakistan; migrated 2018. Holds a Master in English Literature (Pakistan). **Australian citizen** → eligible for fee-free TAFE (Smart & Skilled), CSP places and HECS-HELP deferral. Goal: NSW early childhood teaching/education career.
 
-**Key implication:** The Master in English Literature is NOT a recognised teaching qualification for Australian early childhood work — but it IS a bachelor-equivalent degree, which unlocks the fast graduate-entry routes (Graduate Diploma / Master of Teaching) that career changers without a degree cannot take. Prior overseas teaching experience strengthens applications and interviews but does not substitute for an ACECQA-approved qualification.
+**Key implication:** The Master in English Literature is NOT a recognised teaching qualification for Australian early childhood work — but it is likely to be assessed as bachelor-equivalent [VERIFY: each university assesses overseas degrees], which unlocks the fast graduate-entry routes (Graduate Diploma / Master of Teaching) that career changers without a degree cannot take. Prior overseas teaching experience strengthens applications and interviews but does not substitute for an ACECQA-approved qualification.
 
 ---
+
+## 0. Open items to verify (added 30 Oct 2026)
+- [VERIFY] Diploma code: CHC50121 may be superseded by CHC50125 (2025 release alongside CHC30125).
+- [VERIFY] WSU CSP ~$11,885/yr — ~2.5× other Education CSPs (~$4,700/yr); likely stale or wrong band.
+- [VERIFY] Overseas Master's assessed as bachelor-equivalent by each chosen provider.
+- [VERIFY] English-language entry requirement for ITE (often IELTS 7.5 or equivalent); whether the Master's in English counts as evidence.
+- [VERIFY] Whether LANTITE is required for each Birth–5 program.
+- [VERIFY] Commonwealth Prac Payment (from 2025, means-tested) — eligibility + current rate.
+- [VERIFY] Reg 126: whether being enrolled in an ECT degree counts as Cert III-qualified for ratios (could make Cert III optional).
+- [VERIFY] Volunteer (free) WWCC for student placements vs paid check for employment.
+- [VERIFY] First aid incl. asthma/anaphylaxis (HLTAID012) required by employers.
+- [VERIFY] Current pay rates (award + Dec 2024/Dec 2025 government-funded wage increases) for Cert III, Diploma, ECT.
+- [VERIFY] 2025 child-safety reforms for ECEC (personal devices, child-safe standards, training).
+- [VERIFY] 2027 intakes, 2027 fees (indexed), and 2027 scholarship round (2026 round may be closed).
+- [VERIFY] EYLF v2.0 planning/assessment cycle wording used in interview answers.
+
+Fixed 30 Oct 2026: Grad Dip CSP range ($17,400 upper bound removed), Flinders/ACU MTeach durations (2 yrs FT), SCU mode/PT/intakes, NQS rating levels (lowest is Significant Improvement Required), EYLF Outcome 1 wording.
 
 ## 1. Pathway types (four realistic routes)
 
 ### Pathway A — Certificate III in Early Childhood Education and Care (CHC30125)
 - Entry-level "educator" (assistant) role in long day care / preschool.
-- TAFE NSW and Smart & Skilled RTOs; **fee-free for eligible NSW residents** regardless of age/employment/prior quals.
+- TAFE NSW and Smart & Skilled RTOs; **fee-free for eligible NSW residents** (citizens qualify; other eligibility rules apply).
 - Duration ~6–12 months full-time equivalent; online + face-to-face options; includes mandatory work placement (~160 hours).
 - 17 units (15 core + 2 specialty).
 - Links:
@@ -28,7 +45,7 @@ Compiled 4 July 2026. All fees/durations are indicative — confirm with the pro
 
 ### Pathway C — Graduate-entry Early Childhood Teacher (ECT) — RECOMMENDED for this candidate
 Uses the existing Master's as the entry degree. Two sub-options:
-- **Graduate Diploma of Early Childhood Education** (~1 year FT, online options, ACECQA-approved, accepts any-discipline bachelor or equivalent). CSP-subsidised places from roughly $4,700–$17,400/yr at some providers (e.g. RMIT figures for 2026).
+- **Graduate Diploma of Early Childhood Education** (~1 year FT, online options, ACECQA-approved, accepts any-discipline bachelor or equivalent). CSP places ~$4,700/yr (2026 Education band; see verified fees below).
 - **Master of Teaching (Birth–5 / Early Childhood)** (~1.5–2 years FT, part-time available; RPL for prior study/experience can shorten it).
 - Outcome: qualified ECT — teacher-level salary, preschool and ECT-designated roles; ECTs in NSW must be **accredited with NESA**.
 - Providers & links:
@@ -46,7 +63,7 @@ Uses the existing Master's as the entry degree. Two sub-options:
 
 #### Verified fees & modes (checked against provider pages, 4 July 2026)
 - Macquarie MTeach (Birth–5): ~2 yrs FT; on campus or 100% online via Open Universities Australia; **no CSP for new students** — full fee ~$45,350 total via OUA.
-- WSU MTeach (Early Childhood): 2 yrs FT (PT available); on campus Bankstown City; CSP indicative from ~$11,885/yr.
+- WSU MTeach (Early Childhood): 2 yrs FT (PT available); on campus Bankstown City; CSP indicative from ~$11,885/yr [VERIFY — outlier vs ~$4,700 Education band].
 - WSU MTeach (EC and Primary): 2.5 yrs FT; on campus + school placements; CSP from ~$11,885/yr; early exit possible after EC component.
 - SCU Grad Dip Education (EC): 1 yr FT / 2 yrs PT; online (or Gold Coast); CSP ~$4,736 first year, HECS-HELP deferrable; intakes Mar/Jul/Oct.
 - Flinders Online Grad Dip ECE (Birth–5): 1 yr FT; online + placements; CSP ~$4,734/yr, full fee ~$24,500 (2026).

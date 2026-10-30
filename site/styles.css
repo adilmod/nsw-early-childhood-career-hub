@@ -138,6 +138,7 @@ main {
   font-weight: 600;
   margin-right: 6px;
 }
+.verify-note { font-size: 0.92rem; color: var(--muted); }
 .verify {
   background: #fff3cd;
   color: #7a5c00;
