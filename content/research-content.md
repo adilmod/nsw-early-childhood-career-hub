@@ -115,7 +115,7 @@ Cert III fee-free NOW (fast, free, gets casual work and placement experience wit
 ## 3. Pathway to a job (training → casual → full-time)
 1. **Working With Children Check** (free volunteer check covers placements; ~$105/5yrs paid check for employment) — do first: https://www.service.nsw.gov.au/transaction/apply-working-children-check
 2. **Enrol fee-free Cert III** → mandatory placement (~160 hrs) doubles as a working interview; many students are hired casually by their placement centre.
-3. **NSW ECEC Scholarship Program 2026** — ~2,000 scholarships (up to $27M): study support payments + completion/employment payment; covers VET and birth–5 ECT degrees: https://education.nsw.gov.au/early-childhood-education/initiatives/early-childhood-careers/available-supports/2026-early-childhood-education-and-care-scholarship-program1
+3. **NSW ECEC Scholarship Program 2026** — ~2,000 scholarships (up to $27M): study support payments + completion/employment payment; covers VET and birth–5 ECT degrees: https://education.nsw.gov.au/early-childhood-education/initiatives/early-childhood-careers/available-supports/2026-early-childhood-education-and-care-scholarship-program
    - All support programs (incl. scholarships index): https://education.nsw.gov.au/early-childhood-education/initiatives/early-childhood-careers/available-supports
    - Teach NSW get-paid-to-study: https://education.nsw.gov.au/teach-nsw/get-paid-to-study/teacher-education-scholarship
 - NSW early childhood careers hub: https://education.nsw.gov.au/early-childhood-education/initiatives/early-childhood-careers
@@ -146,7 +146,7 @@ Filter tips: search terms "Cert III educator", "trainee educator", "OSHC assista
 Frameworks interviewers test against:
 - **EYLF v2.0** (Early Years Learning Framework) — 5 outcomes: Identity; Community; Wellbeing; Learning; Communication. https://www.acecqa.gov.au/nqf/national-law-regulations/approved-learning-frameworks
 - **NQS** — 7 quality areas (program & practice; health & safety; physical environment; staffing; relationships with children; partnerships with families; governance). https://www.acecqa.gov.au/nqf/national-quality-standard
-- **APST** (Australian Professional Standards for Teachers, used by NESA for ECT accreditation): https://www.nsw.gov.au/education-and-training/nesa/teacher-accreditation/how-accreditation-works/teaching-standards
+- **APST** (Australian Professional Standards for Teachers, used by NESA for ECT accreditation): https://www.nsw.gov.au/sites/default/files/2023-01/Australian-Professional-Standards-for-Teachers-teacher-accreditation.pdf
 - **ECA Code of Ethics**: https://www.earlychildhoodaustralia.org.au/our-publications/eca-code-ethics/
 - Child protection / mandatory reporting NSW: https://reporter.childstory.nsw.gov.au/s/mrg
 

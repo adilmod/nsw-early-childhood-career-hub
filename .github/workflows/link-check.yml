@@ -18,8 +18,11 @@ jobs:
         uses: lycheeverse/lychee-action@v2
         with:
           # Some job boards block bots (403/429); report but do not fail on those.
+          # education.gov.au and fairwork.gov.au break HTTP/2 for automated clients, so they are skipped.
           args: >-
             --no-progress
+            --exclude '^https://www\.education\.gov\.au/'
+            --exclude '^https://www\.fairwork\.gov\.au/'
             --max-retries 2
             --accept 200..=299,403,429
             site/*.html
